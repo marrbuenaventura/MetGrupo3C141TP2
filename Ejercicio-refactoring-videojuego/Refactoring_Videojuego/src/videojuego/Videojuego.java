@@ -1,6 +1,4 @@
 package videojuego;
-
-// Videojuego.java (el de la captura, con los errores corregidos)
 import java.util.ArrayList;
 import java.util.List;
 
