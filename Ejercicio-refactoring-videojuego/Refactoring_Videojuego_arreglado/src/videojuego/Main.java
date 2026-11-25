@@ -1,6 +1,5 @@
 package videojuego;
 
-// Main.java
 public class Main {
     public static void main(String[] args) {
         Videojuego juego = new Videojuego();
