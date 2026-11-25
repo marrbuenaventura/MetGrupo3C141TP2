@@ -9,10 +9,10 @@ public class Videojuego {
     public void agregar(Personaje p) { personajes.add(p); }
 
     public Personaje personajeConMasDaño() {
-        Personaje masFuerte = null;   // Rename Variable (antes: temp)
+        Personaje masFuerte = null;   
         double max = 0;
         for (Personaje p : personajes) {
-            double daño = p.calcularDañoTotal();   // Hide Delegate
+            double daño = p.calcularDañoTotal();   
             if (daño > max) {
                 masFuerte = p;
                 max = daño;
@@ -22,6 +22,6 @@ public class Videojuego {
     }
 
     public void imprimirInfo(Personaje p) {
-        p.imprimirInfo();   // Move Method
+        p.imprimirInfo();  
     }
 }
