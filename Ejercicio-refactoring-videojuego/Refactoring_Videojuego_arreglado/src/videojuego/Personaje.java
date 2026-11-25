@@ -13,13 +13,10 @@ public class Personaje {
 
     public String getNombre() { return nombre; }
     public double getDaño() { return daño; }
-
-    // Hide Delegate: Videojuego ya no recorre la cadena getTipoHabilidad().calcularDaño(...)
     public double calcularDañoTotal() {
         return tipoHabilidad.calcularDaño(daño);
     }
 
-    // Move Method: antes estaba en Videojuego. Sin if: se delega en la estrategia
     public void imprimirInfo() {
         System.out.println(nombre + " tiene como daño " + daño);
         System.out.println("Habilidad tipo " + tipoHabilidad.getTipo());
