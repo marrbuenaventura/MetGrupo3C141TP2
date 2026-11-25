@@ -1,6 +1,4 @@
 package videojuego;
-
-// Personaje.java (original)
 public class Personaje {
     private String nombre;
     private double daño;
